@@ -1,0 +1,6 @@
+set $term foot
+set $reader zathura
+set $browser firefox
+set $editor emacs
+set $wallpaper ~/Pictures/anime1.jpg
+set $menu  "fuzzel"

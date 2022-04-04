@@ -1,0 +1,26 @@
+for_window [title="wl-clipboard"] floating enable
+bindsym $mod+Backslash exec $editor
+bindsym $mod+d exec $menu
+bindsym $mod+end exec shutdown_menu -c
+exec swayidle timeout 350 "ghilock -c 000000f0" before-sleep "ghilock -c 000000f0"
+# shortcut to selection widget (primary)
+bindsym $mod+c exec "clipmenu -i"
+bindsym $mod+p exec "rofi-pass"
+bindsym $mod+m exec "rofi -show calc -modi calc -no-show-match -no-sort"
+
+# Media player controls
+bindsym XF86AudioPlay exec mpc play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc previous
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
+
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+

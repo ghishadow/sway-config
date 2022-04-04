@@ -1,0 +1,4 @@
+exec mpd
+exec mako
+exec dbus-update-activation-environment --systemd --all
+exec sudo kbct remap --config ~/.config/kbct.yaml
