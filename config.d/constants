@@ -3,4 +3,4 @@ set $reader zathura
 set $browser firefox
 set $editor emacs
 set $wallpaper ~/Pictures/anime1.jpg
-set $menu  "fuzzel"
+set $menu  "fuzzel --font='Liga SFMono Nerd Font:weight=bold:size=14' --background-color='282a36fa' --selection-color='3d4474fa'  | xargs swaymsg exec --"

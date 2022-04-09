@@ -4,8 +4,8 @@ bindsym $mod+d exec $menu
 bindsym $mod+end exec shutdown_menu -c
 exec swayidle timeout 350 "ghilock -c 000000f0" before-sleep "ghilock -c 000000f0"
 # shortcut to selection widget (primary)
-bindsym $mod+c exec "clipmenu -i"
-bindsym $mod+p exec "rofi-pass"
+bindsym $mod+c exec "cliphist list | fuzzel -d  --font='Liga SFMono Nerd Font:weight=bold:size=14' --background-color='282a36fa' --selection-color='3d4474fa' | cliphist decode | wl-copy"
+# bindsym $mod+p exec "rofi-pass"
 bindsym $mod+m exec "rofi -show calc -modi calc -no-show-match -no-sort"
 
 # Media player controls
@@ -24,3 +24,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #i
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
+bindsym Mod4+p       exec grimshot save active
+bindsym Mod4+Shift+p exec grimshot save area
+bindsym Mod4+Mod1+p  exec grimshot save output
+bindsym Mod4+Ctrl+p  exec grimshot save window

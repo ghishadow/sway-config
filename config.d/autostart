@@ -1,4 +1,9 @@
-exec mpd
-exec mako
+exec vmware-user-suid-wrapper
+exec vmtoolsd -n vmusr
+exec wl-paste --watch cliphist store 
+exec_always /home/ghishadow/github/nixos-config/bin/import_gsettings
+exec fnott
+exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment --systemd --all
-exec sudo kbct remap --config ~/.config/kbct.yaml
+exec "systemctl --user import-environment; systemctl --user start sway-session.target"
+#exec sudo kbct remap --config ~/.config/kbct.yaml

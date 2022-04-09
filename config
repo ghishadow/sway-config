@@ -33,11 +33,12 @@ gaps outer 2
 
 default_border pixel 2
 
-output HDMI1 pos 0 0 res 1920x1080
-output HDMI1 scale 2
-set $laptop LVDS-1
-bindswitch --reload --locked lid:on output $laptop disable
-bindswitch --reload --locked lid:off output $laptop enable
+output Virtual-1 resolution 2560x1440
+#output HDMI1 pos 0 0 res 1920x1080
+#output HDMI1 scale 2
+#set $laptop LVDS-1
+#bindswitch --reload --locked lid:on output $laptop disable
+#bindswitch --reload --locked lid:off output $laptop enable
 
 #focus output <name-or-identifier>
 
@@ -240,4 +241,4 @@ for_window [window_type="menu"] floating enable
 for_window [instance="update_installer"] floating enable
 
 
-#xwayland disable
+xwayland disable
