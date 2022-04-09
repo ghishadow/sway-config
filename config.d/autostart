@@ -6,4 +6,4 @@ exec fnott
 exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment --systemd --all
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
-#exec sudo kbct remap --config ~/.config/kbct.yaml
+exec re_key
