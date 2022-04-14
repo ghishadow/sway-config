@@ -1,6 +1,7 @@
-set $term foot
+set $shell zsh
+set $term footclient -L $shell
 set $reader zathura
 set $browser firefox
 set $editor emacs
-set $wallpaper ~/Pictures/anime1.jpg
-set $menu  "fuzzel --font='Liga SFMono Nerd Font:weight=bold:size=14' --background-color='282a36fa' --selection-color='3d4474fa'  | xargs swaymsg exec --"
+set $wallpaper ~/Pictures/unicat.png
+set $menu  "fuzzel --font='Liga SFMono Nerd Font:weight=bold:size=14' --background-color='161320' --selection-color='F28FAD'  | xargs swaymsg exec --"
