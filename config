@@ -241,4 +241,4 @@ for_window [window_type="menu"] floating enable
 for_window [instance="update_installer"] floating enable
 
 
-#xwayland disable
+xwayland disable
