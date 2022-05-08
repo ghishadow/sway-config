@@ -1,3 +1,4 @@
+exec autotiling
 exec foot -s
 exec vmware-user-suid-wrapper
 exec vmtoolsd -n vmusr

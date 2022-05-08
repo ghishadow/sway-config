@@ -20,18 +20,27 @@ include ~/.config/sway/config.d/*
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base05 $base0D $base00 $base0D $base0D
-client.focused_inactive $base01 $base01 $base05 $base03 $base01
-client.unfocused        $base01 $base00 $base05 $base01 $base01
-client.urgent           $base08 $base08 $base00 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
-client.background       $base07
+#client.focused          $base05 $base0D $base00 $base0D $base0D
+#client.focused_inactive $base01 $base01 $base05 $base03 $base01
+#client.unfocused        $base01 $base00 $base05 $base01 $base01
+#client.urgent           $base08 $base08 $base00 $base08 $base08
+#client.placeholder      $base00 $base00 $base05 $base00 $base00
+#client.background       $base07
+
+ # class                 border  backgr. text    indicator child_border
+client.focused          #c574dd #222436 #a9b8e8 #c574dd   #c574dd
+client.focused_inactive #252734 #252734 #a9b8e8 #252734   #252734
+client.unfocused        #252734 #252734 #888888 #252734   #252734
+client.urgent           #2f343a #900000 #a9b8e8 #900000   #900000
+client.placeholder      #000000 #0c0c0c #a9b8e8 #000000   #0c0c0c
+client.background       #1a1b26
 
    
 gaps inner 2
 gaps outer 2
 
-default_border none
+default_border pixel 2
+hide_edge_borders smart
 
 output Virtual-1 resolution 2560x1440
 #output HDMI1 pos 0 0 res 1920x1080
@@ -195,7 +204,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position bottom
+    position top
 
     #When the status_command prints a new line to stdout, swaybar updates.
     #The default just shows the current date and time.
@@ -222,7 +231,7 @@ colors {
 
 # Open applications on specific workspaces
 assign [class="Firefox"] $workspace2 
-assign [class="Chrome"] $workspace2
+assign [class="foot"] $workspace1
 assign [class="vscode"] $workspace3
 assign [class="IDEA"] 3
 assign [class="nautilus"] 4
@@ -240,5 +249,7 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [instance="update_installer"] floating enable
 
+focus_on_window_activation urgent
 
-xwayland disable
+
+#xwayland disable

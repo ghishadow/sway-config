@@ -1,16 +1,20 @@
-set $base00 #1e1f29
-set $base01 #34353e
-set $base02 #4a4b53
-set $base03 #78787e
-set $base04 #a5a5a9
-set $base05 #eff0eb
-set $base06 #f1f1f0
-set $base07 #f1f1f0
-set $base08 #ff5c57
-set $base09 #ff9f43
-set $base0A #f3f99d
-set $base0B #5af78e
-set $base0C #9aedfe
-set $base0D #57c7ff
-set $base0E #ff6ac1
-set $base0F #b2643c
+
+
+
+
+set $base00 #1E1E2E 
+set $base01 #302D41 
+set $base02 #302D41 
+set $base03 #575268 
+set $base04 #575268 
+set $base05 #c574dd 
+set $base06 #C9CBFF 
+set $base07 #F5E0DC 
+set $base08 #F28FAD 
+set $base09 #E8A2AF 
+set $base0A #FAE3B0 
+set $base0B #ABE9B3 
+set $base0C #89DCEB 
+set $base0D #96CDFB 
+set $base0E #DDB6F2 
+set $base0F #DDB6F2
