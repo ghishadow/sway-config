@@ -1,7 +1,7 @@
 set $shell zsh
 set $term footclient -L $shell
 set $reader zathura
-set $browser firefox-wayland
+set $browser firefox
 set $editor neovide
-set $wallpaper ~/Pictures/unicat.png
-set $menu  "fuzzel --font='JetBrainsMono Nerd Font:weight=bold:size=14' --selection-color='DDB6F2ff' --background-color='16132010' --text-color='D9E0EEff'  | xargs swaymsg exec --"
+set $wallpaper ~/Pictures/boom_flamingo.png
+set $menu  "fuzzel --font='Martian Mono:weight=bold:size=14' --selection-color='DDB6F2ff' --background-color='16132010' --text-color='D9E0EEff'  | xargs swaymsg exec --"

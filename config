@@ -42,6 +42,7 @@ gaps outer 2
 default_border pixel 2
 hide_edge_borders smart
 
+#output Virtual-1 resolution 2880x1800
 output Virtual-1 resolution 2560x1440
 #output HDMI1 pos 0 0 res 1920x1080
 #output HDMI1 scale 2
@@ -233,7 +234,6 @@ assign [class="foot"] $workspace1
 assign [class="vscode"] $workspace3
 assign [class="IDEA"] 3
 assign [class="nautilus"] 4
-assign [class="slack"] $workspace9
 assign [class="mpv"] 10
 
 
