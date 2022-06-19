@@ -249,5 +249,4 @@ for_window [instance="update_installer"] floating enable
 
 focus_on_window_activation urgent
 
-
 xwayland disable

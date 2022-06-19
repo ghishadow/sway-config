@@ -8,4 +8,4 @@ exec fnott
 exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment --systemd DISPLAY
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
-exec re_key
+exec /home/ghishadow/bin/re_key
