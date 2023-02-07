@@ -1,7 +1,9 @@
 set $shell zsh
-set $term footclient -L $shell
+set $term wezterm
 set $reader zathura
 set $browser firefox
 set $editor neovide
-set $wallpaper ~/Pictures/boom_flamingo.png
-set $menu  "fuzzel --font='Martian Mono:weight=bold:size=14' --selection-color='DDB6F2ff' --background-color='16132010' --text-color='D9E0EEff'  | xargs swaymsg exec --"
+set $wallpaper ~/Pictures/evening-sky.png
+set $menu  "fuzzel --show-actions --font='BerkeleyMonoVariable Nerd Font:weight=regular:size=14' -i "Papirus-Dark"  -T wezterm -w 32 -l 8 -r 5 --border-color='24273a' --selection-color='24273a10'  --background-color='24273add' --text-color='cad3f5ff' -D yes | xargs swaymsg exec --"
+	
+	

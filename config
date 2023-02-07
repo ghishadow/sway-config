@@ -36,14 +36,14 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
    
-gaps inner 2
-gaps outer 2
+gaps inner 1
+gaps outer 1
 
 default_border pixel 2
 hide_edge_borders smart
 
 #output Virtual-1 resolution 2880x1800
-output Virtual-1 resolution 2560x1440
+output Virtual-1 resolution 1920x1080
 #output HDMI1 pos 0 0 res 1920x1080
 #output HDMI1 scale 2
 #set $laptop LVDS-1
@@ -74,8 +74,10 @@ output * bg $wallpaper fill
     bindsym $mod+Shift+c reload
 
     # exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
-#
+    #bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec wlogout
+
+
 # Moving around:
 #
     # Move your focus around
@@ -226,17 +228,13 @@ bar {
   }
 }
 
-
-
 # Open applications on specific workspaces
 assign [class="Firefox"] $workspace2 
 assign [class="foot"] $workspace1
-assign [class="vscode"] $workspace3
+assign [class="lapce"] $workspace3
 assign [class="IDEA"] 3
 assign [class="nautilus"] 4
 assign [class="mpv"] 10
-
-
 
 # default floating
 for_window [window_role="pop-up"] floating enable
